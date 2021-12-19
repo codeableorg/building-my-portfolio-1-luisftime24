@@ -1,0 +1,121 @@
+@import url("reset.css");
+@import url("typographies.css");
+@import url("buttons.css");
+@import url("colors.css");
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 15%;
+}
+
+section {
+  padding: 2.5rem 0px;
+}
+
+.container {
+  margin: auto;
+  max-width: 780px;
+}
+
+.logo {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+}
+
+.nav_links li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav_links {
+  list-style: none;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0rem 1.25rem;
+}
+
+.nav_links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+  color: rgb(255, 96, 123);
+}
+
+.contact {
+  padding: 5px 1.25rem;
+  color: white;
+  background-color: var(--primary-pink);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.contact:hover {
+  color: black;
+}
+
+.contact:active {
+  transform: scale(0.9)
+}
+
+.text-center {
+  text-align: center;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 356px);
+}
+
+.article {
+  margin-bottom: 3rem;
+}
+
+.articles-title {
+  margin-bottom: 3rem;
+}
+
+.article-date,
+.article-title,
+.article-summary {
+  margin-bottom: 16px;
+}
+
+.name {
+  color: var(--primary-blue);
+}
+
+.social {
+  color: var(--primary-pink);
+}
+
+.footer {
+  margin: auto;
+  padding: 3rem 0rem;
+  background-color: var(--primary-sky);
+}
+
+.div-footer {
+  align-items: center;
+  text-align: center;
+}
+
+.div-footer button {
+  background-color: #EDD2F3;
+  color: rgb(49, 49, 49);
+}
