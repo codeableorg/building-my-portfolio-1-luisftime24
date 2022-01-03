@@ -1,6 +1,7 @@
 :root {
-    --primary-pink: rgb(253, 88, 116);
-    --primary-blue: #516BEB;
-    --primary-sky: #84DFFF;
-    --secondary-yellow: #FFFCDC;
+    --primary-color: #516BEB;
+    --secondary-color: #3F3D56;
+    --main-font: 'Poppins', sans-serif;
+    --secondary-font: 'Inter', sans-serif;
+    --height-nav: 70px;
 }

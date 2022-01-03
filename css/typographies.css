@@ -1,86 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400&display=swap');
 
-body {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-family: "Inter", sans-serif;
+.heading {
+    font-family: var(--main-font);
+    color: var(--secondary-color);
 }
 
-a {
-	text-decoration: none;
+.subtitle {
+    font-size: 2rem;
+    font-weight: 400;
 }
 
-h3 {
-	color: var(--primary-blue)
+.content {
+    font-family: var(--secondary-font);
+    font-weight: 400;
+    color: var(--secondary-color)
 }
 
-.heading,
-.heading--md {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
+.nav__title {
+    font-weight: 600;
+    color: #fff;
 }
 
-.heading--xxl {
-  font-size: 3.75rem;
-  line-height: 3.75rem;
+.title {
+    font-size: 2.5rem;
+    font-weight: 600;
 }
 
-.heading--xl {
-  font-size: 3rem;
-  line-height: 3rem;
+.paragraph {
+    font-size: 1.25rem;
 }
 
-.heading--lg {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.paragraph--sm {
+    font-size: 1.1rem;
 }
 
-.heading--sm {
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-.content-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
-.content-xs {
-  font-size: 0.75rem;
-  line-height: 1rem;
+.social {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .overline {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  letter-spacing: 0.125rem;
-  text-transform: uppercase;
-  font-family: "Inter", sans-serif;
-}
-
-.button-md-content {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-family: "Inter", sans-serif;
-	color: var(--primary-pink);
-	text-decoration: none;
-}
-
-.button-lg-content {
-  font-size: 1rem;
-  line-height: 1.5rem;
-  font-weight: 500;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  font-family: "Inter", sans-serif;
-}
-
-.mt-32 {
-	margin-top: 32px;
+    font-size: 0.75rem;
+    letter-spacing: 0.125rem;
+    text-transform: uppercase;
+    font-family: var(--secondary-font);
 }

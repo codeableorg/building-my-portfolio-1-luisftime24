@@ -1,121 +1,185 @@
 @import url("reset.css");
+@import url("scrollbar.css");
+@import url("colors.css");
 @import url("typographies.css");
 @import url("buttons.css");
-@import url("colors.css");
 
-header {
-  background-color: black;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.2rem 15%;
-}
 
-section {
-  padding: 2.5rem 0px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
 }
 
 .container {
-  margin: auto;
-  max-width: 780px;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
 }
 
-.logo {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 700;
-  cursor: pointer;
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
+.nav {
+    background-color: var(--primary-color);
+    height: var(--height-nav);
+    color: #fff;
 }
 
-.nav_links li a {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  color: white;
-  text-decoration: none;
+.nav__container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.nav_links {
-  list-style: none;
+.nav__link {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1em;
+    font-size: 1.2rem;
+    transition: all 0.3s ease 0s;
 }
 
-.nav_links li {
-  display: inline-block;
-  padding: 0rem 1.25rem;
+.nav__link:hover {
+    color: var(--secondary-color);
 }
 
-.nav_links li a {
-  transition: all 0.3s ease 0s;
+.cta {
+    text-decoration: none;
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #FFFCDC;
+    border-radius: 6px;
+    color: var(--primary-color);
+    transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
-  color: rgb(255, 96, 123);
+.cta:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
 }
 
-.contact {
-  padding: 5px 1.25rem;
-  color: white;
-  background-color: var(--primary-pink);
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  text-decoration: none;
+.cta:active {
+    transform: scale(0.9);
 }
 
-.contact:hover {
-  color: black;
+.nav__menu, .nav__input {
+    display: none;
 }
 
-.contact:active {
-  transform: scale(0.9)
+.nav__input:checked + .nav__links {
+    background-color: var(--primary-color);
 }
 
-.text-center {
-  text-align: center;
+@media (max-width: 700px) {
+    .nav__menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav__links {
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        width: 100%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        clip-path: circle(0 at center);
+    }
+
+    .nav__input:checked + .nav__links {
+        clip-path: circle(100% at center);
+    }
 }
 
-.articles {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 356px);
+
+.description {
+    display: flex;
+    height: calc(100vh - var(--height-nav));
+    align-items: center;
+    min-height: 600px;
 }
 
-.article {
-  margin-bottom: 3rem;
+.description__texts {
+    flex: 1;
 }
 
-.articles-title {
-  margin-bottom: 3rem;
+.description__picture {
+    flex: 1;
 }
 
-.article-date,
-.article-title,
-.article-summary {
-  margin-bottom: 16px;
+.description__img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 0 auto;
 }
 
-.name {
-  color: var(--primary-blue);
+@media screen and (max-width: 900px) {
+    .description {
+        flex-direction: column;
+        padding: 40px 0;
+    }
+
+    .description__picture {
+        order: -1;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+    }
+
+    .paragraph--sm {
+        font-size: 1rem;
+    }
+
+    .description__img {
+        max-width: 360px;
+    }
 }
 
-.social {
-  color: var(--primary-pink);
+.main__articles {
+    background-color: #fff;
+    padding: 40px 0;
+}
+
+.articles__texts {
+    text-align: center;
+    padding: 20px 0 30px 0;
+}
+
+.articles__container {
+    display: grid;
+}
+
+.articles__item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.articles__item .content {
+    margin-bottom: 20px;
+}
+
+.articles__item .button {
+    margin-top: auto;
+}
+
+.article-date {
+    margin: 16px 0;
 }
 
 .footer {
-  margin: auto;
-  padding: 3rem 0rem;
-  background-color: var(--primary-sky);
-}
-
-.div-footer {
-  align-items: center;
-  text-align: center;
-}
-
-.div-footer button {
-  background-color: #EDD2F3;
-  color: rgb(49, 49, 49);
+    text-align: center;
+    padding: 70px 0;
 }

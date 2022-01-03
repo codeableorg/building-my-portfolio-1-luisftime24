@@ -1,0 +1,27 @@
+.button {
+    background-color: black;
+    display: inline-block;
+    padding: 10px 25px;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.3s ease 0s;
+}
+
+.button:active {
+    transform: scale(.9);
+}
+
+.button--sm {
+    background-color: var(--primary-color);
+    padding: 6px 10px;
+}
+
+.button--sm:hover {
+    background-color: var(--secondary-color);
+}
+
+.read-more {
+    background-color: var(--primary-color);
+}
